@@ -9,8 +9,8 @@ namespace PresentCreditsApplication
 {
     public class TextReader
     {
-        public IReadAble Text { get; set; }
-        public TextReader(IReadAble text)
+        public IDividable Text { get; set; }
+        public TextReader(IDividable text)
         {
             Text = text;
         }

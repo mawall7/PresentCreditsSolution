@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PresentCreditsApplication
 {
-    public interface IReadAble
+    public interface IDividable
     {
         public string Read();
         public List<string> ReadChunks();

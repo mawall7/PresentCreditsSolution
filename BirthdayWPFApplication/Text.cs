@@ -8,7 +8,7 @@ using static BirthdayWPFApplication.MainWindow;
 namespace PresentCreditsApplication
 {
     
-        public record Text : IReadAble
+        public record Text : IDividable
         {
             private const int _rowMaxCharLength = 82;
 

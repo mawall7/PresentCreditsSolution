@@ -37,9 +37,9 @@ namespace BirthdayWPFApplication
         public void RollText() //Single Responsibility to do
         {
 
-            IReadAble text = new Text();
-            var ReadText = new TextReader(text);
-            text1.Text = ReadText.Read(text.ReadChunks());//ReadChunks move to ReadText
+            IDividable text = new Text();
+            var reader = new TextReader(text);
+            text1.Text = reader.Read(text.ReadChunks());//ReadChunks move to ReadText
 
             ThicknessAnimation tanimation = new ThicknessAnimation();
             DoubleAnimation animation = new DoubleAnimation();
